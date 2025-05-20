@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    />
+
+    <title>Css Practice 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #c1c1c1;
+        transition: all ease 0.5s;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        min-width: 100%;
+        padding: 5px 20px;
+      }
+      .cardWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-wrap: wrap;
+      }
+      .card {
+        height: 350px;
+        width: 300px;
+        padding: 20px;
+        background-color: #d9d6d6fa;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        transition: all ease 0.3s;
+      }
+      .card:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        transform: scale(1.03);
+      }
+      .iconBox {
+        background-color: #0b51c2cb;
+        color: white;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+      .title {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .description {
+        font-size: 1.2rem;
+        padding: 20px 0px;
+        text-align: center;
+        border-bottom: 3px solid #576875;
+        color: #576875;
+      }
+      .btn {
+        margin-top: 10px;
+        height: 50px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 50px;
+        color: white;
+        background-color: #0b51c2cb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color ease 0.3s;
+      }
+      .btn:hover {
+        background-color: #09419ccb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cardWrapper">
+        <div class="card">
+          <div class="iconBox">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="title">Visualize it</div>
+          <div class="description">Lorem ipsum, dolor sit amet consectetur</div>
+          <div class="btn">Read More</div>
+        </div>
+        <div class="card">
+          <div class="iconBox">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="title">Visualize it</div>
+          <div class="description">Lorem ipsum, dolor sit amet consectetur</div>
+          <div class="btn">Read More</div>
+        </div>
+        <div class="card">
+          <div class="iconBox">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="title">Visualize it</div>
+          <div class="description">Lorem ipsum, dolor sit amet consectetur</div>
+          <div class="btn">Read More</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
